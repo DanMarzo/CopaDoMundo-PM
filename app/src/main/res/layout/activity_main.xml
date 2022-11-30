@@ -23,26 +23,198 @@
         android:layout_height="wrap_content"
         android:text="@string/nomeTime"
         android:textSize="24dp"
-        app:layout_constraintBottom_to="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/brasao"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12"></TextView>
+        app:layout_constraintVertical_bias="0.743" />
+
+    <Button
+        android:id="@+id/butao_Selecao"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/escalacao"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brasao" />
 
     <ImageView
-        android:layout_width="120dp"
-        android:layout_height="96dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/brasaoEquador"
+        android:id="@+id/brasao"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/brasao_equador"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Nome_Pais"
-        app:layout_constraintVertical_bias="0.007">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.253" />
 
-    </ImageView>
+    <!--29/11-->
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butao_Selecao">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/equador" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/NomeEquador"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+        <!--Data-->
+        <TextView
+            android:layout_width="215dp"
+            android:layout_height="31dp"
+            android:text="29/11"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <!--Segunda parte-->
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/NomeSenegal"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/senegal" />
+    </LinearLayout>
+<!--25/11-->
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/holanda" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/NomeHolanda"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+        <!--Data-->
+        <TextView
+            android:layout_width="215dp"
+            android:layout_height="31dp"
+            android:text="25/11"
+            android:textSize="14dp"
+            android:textAlignment="center"/>
+
+        <!--Segunda parte-->
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/NomeEquador"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/equador" />
+    </LinearLayout>
+<!--20/11-->
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear2"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/qtar" />
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/NomeQatar"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+        <!--Data-->
+        <TextView
+            android:layout_width="215dp"
+            android:layout_height="31dp"
+            android:text="20/11"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+
+        <!--Segunda parte-->
+
+        <TextView
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/NomeEquador"
+            android:textAlignment="center"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/equador" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">CopaDoMundo</string>
     <string name="nomeTime">Equador</string>
+    <string name="escalacao">See Lineup</string>
+    <string name="NomeEquador">EQUADOR</string>
+    <string name="NomeSenegal">SENEGAL</string>
+    <string name="NomeHolanda">HOLANDA</string>
+    <string name="NomeQatar">QATAR</string>
 </resources>
