@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:scrollbars="vertical">
 
     <ImageView
         android:layout_width="32dp"
@@ -53,168 +54,174 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.253" />
 
-    <!--29/11-->
-    <LinearLayout
-        android:id="@+id/linear1"
+    <!--Contra Senegal-->
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/contra_senegal"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/butao_Selecao">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butao_Selecao"
+        app:layout_constraintVertical_bias="0.183"
+        tools:layout_editor_absoluteX="0dp">
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginLeft="8dp"
-            android:background="@drawable/equador" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/equador"/>
 
         <TextView
-            android:layout_width="62dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="64dp"
             android:text="@string/NomeEquador"
-            android:textAlignment="center"
-            android:textSize="14dp" />
-        <!--Data-->
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+            <!--InicioData-->
         <TextView
-            android:layout_width="215dp"
-            android:layout_height="31dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="29/11"
             android:textSize="16dp"
             android:textStyle="bold"
-            android:textAlignment="center"/>
-
-        <!--Segunda parte-->
+            android:gravity="center"
+            />
+            <!--FimData-->
 
         <TextView
-            android:layout_width="62dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
             android:text="@string/NomeSenegal"
-            android:textAlignment="center"
-            android:textSize="14dp" />
-
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginRight="64dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            />
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginRight="8dp"
-            android:background="@drawable/senegal" />
-    </LinearLayout>
-<!--25/11-->
-    <LinearLayout
-        android:id="@+id/linear2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/senegal"/>
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+    <!--Contra Holanda-->
+
+    <!--Contra Qatar-->
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/contra_holanda"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintTop_toBottomOf="@+id/linear1"
-        >
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contra_senegal"
+        app:layout_constraintVertical_bias="0.143"
+        tools:layout_editor_absoluteX="26dp">
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginLeft="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
             android:background="@drawable/holanda" />
 
         <TextView
-            android:layout_width="62dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="64dp"
+            android:gravity="center"
             android:text="@string/NomeHolanda"
-            android:textAlignment="center"
-            android:textSize="14dp" />
-        <!--Data-->
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <!--InicioData-->
         <TextView
-            android:layout_width="215dp"
-            android:layout_height="31dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
             android:text="25/11"
-            android:textSize="14dp"
-            android:textAlignment="center"/>
-
-        <!--Segunda parte-->
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <!--FimData-->
 
         <TextView
-            android:layout_width="62dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="64dp"
+            android:gravity="center"
             android:text="@string/NomeEquador"
-            android:textAlignment="center"
-            android:textSize="14dp" />
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginRight="8dp"
-            android:background="@drawable/equador" />
-    </LinearLayout>
-<!--20/11-->
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/equador"
+            android:textStyle="bold" />
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
 
-    <LinearLayout
-        android:id="@+id/linear3"
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/contra_qatar"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="16dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linear2"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/contra_holanda"
+        app:layout_constraintVertical_bias="0.183"
+        tools:layout_editor_absoluteX="0dp">
 
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="24dp"
-            android:background="@drawable/qtar" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/qtar"/>
 
         <TextView
-            android:layout_width="62dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="64dp"
             android:text="@string/NomeQatar"
-            android:textAlignment="center"
-            android:textSize="14dp" />
-        <!--Data-->
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <!--InicioData-->
         <TextView
-            android:layout_width="215dp"
-            android:layout_height="31dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="20/11"
-            android:textAlignment="center"
-            android:textSize="14dp" />
-
-        <!--Segunda parte-->
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <!--FimData-->
 
         <TextView
-            android:layout_width="62dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
             android:text="@string/NomeEquador"
-            android:textAlignment="center"
-            android:textSize="14dp" />
-
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginRight="64dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            />
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginRight="8dp"
-            android:background="@drawable/equador" />
-    </LinearLayout>
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:textStyle="bold"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/equador"/>
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
