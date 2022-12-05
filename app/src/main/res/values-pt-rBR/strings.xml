@@ -1,10 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CopaDoMundo</string>
+    <string name="app_name">Copa Do Mundo</string>
     <string name="nomeTime">Equador</string>
     <string name="escalacao">Ver Escalação</string>
     <string name="NomeEquador">EQUADOR</string>
     <string name="NomeSenegal">SENEGAL</string>
     <string name="NomeHolanda">HOLANDA</string>
     <string name="NomeQatar">QATAR</string>
+    <string name="Copa1">Hernan Galindez</string>
+    <string name="Copa2">Felix Torres</string>
+    <string name="Copa3">Piero Hincapié</string>
+    <string name="Copa4">Robert Arboleda</string>
+    <string name="Copa5">José Cifuentes</string>
+    <string name="Copa6">William Pacho</string>
+    <string name="Copa7">Pervis Estupinan</string>
+    <string name="Copa8">Carlos Gruezo</string>
+    <string name="Copa9">Ayrton Preciado</string>
+    <string name="Copa10">Romario Ibarra</string>
+    <string name="Copa11">Michael Estrada</string>
+    <string name="Copa12">Moisés Ramírez</string>
+    <string name="Copa13">Enner Valencia</string>
+    <string name="Copa14">Xavier Arreaga</string>
+    <string name="Copa15">Ángel Mena</string>
+    <string name="Copa16">Jeremy Sarmiento</string>
+    <string name="Copa17">Angelo Preciado</string>
+    <string name="Copa18">Diego Palacios</string>
+    <string name="Copa19">Gonzalo Plata</string>
+    <string name="Copa20">Jhegson Méndez</string>
+    <string name="Copa21">Alan Franco</string>
+    <string name="Copa22">Alexander Domínguez</string>
+    <string name="Copa23">Moisés Caicedo</string>
+    <string name="Copa24">Djorkaeff Reascos</string>
+    <string name="Copa25">Jackson Porozo</string>
+    <string name="Copa26">Kevin Rodriguez</string>
+    <string name="title_activity_escalacao">Escalação</string>
+    <string name="Seletion">Seleção</string>
+    <string name="voltarButton">Voltar</string>
 </resources>
